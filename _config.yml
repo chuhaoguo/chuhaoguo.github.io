@@ -1,0 +1,39 @@
+# ─────────────────────────────────────────────
+#  Porphyrian Tree — site settings
+#  Edit the values below; the whole site updates.
+# ─────────────────────────────────────────────
+title: Porphyrian Tree
+tagline: Notes on minds, machines, and the categories we divide them by
+description: >-
+  A research journal on the philosophy of artificial intelligence —
+  mind, meaning, agency, and the old taxonomies that new machines unsettle.
+url: "https://treephilosophy.me"
+baseurl: ""
+
+author:
+  name: "Your Name"            # ← change me
+  role: "Researcher in the Philosophy of AI"
+  affiliation: ""              # e.g. "Department of Philosophy, …"
+  email: ""                    # optional; shown on About page if set
+  links:                       # optional; delete any you don't use
+    - { label: "Google Scholar", url: "" }
+    - { label: "PhilPapers",     url: "" }
+    - { label: "GitHub",         url: "" }
+
+# Default language of your writing; the translator converts from this.
+source_language: en
+
+permalink: /blog/:year/:month/:title/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  footnote_backlink: "↩"
+  math_engine: mathjax        # renders $$…$$ ; displayed with KaTeX
+timezone: America/Chicago
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+
+exclude: [README.md, new-post-template.md, Gemfile, Gemfile.lock, vendor, .jekyll-cache]

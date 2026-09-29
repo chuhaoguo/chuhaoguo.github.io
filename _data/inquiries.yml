@@ -1,0 +1,10 @@
+# The three "columns" on the home page — your main lines of research.
+- numeral: I
+  title: Mind & Mechanism
+  text: Can understanding, belief, or experience be realised in a system that was trained rather than born? What would count as evidence either way?
+- numeral: II
+  title: Meaning & Language
+  text: Grounding, reference, and the strange semantics of models that learn words from other words.
+- numeral: III
+  title: Agency & Ethics
+  text: Responsibility, moral status, and what we owe to — and should demand of — artificial agents.

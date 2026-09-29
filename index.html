@@ -1,0 +1,70 @@
+---
+layout: default
+body_class: home
+---
+<section class="hero wrap">
+  <div class="hero-text">
+    <p class="eyebrow mono"><span class="dot"></span> A research journal · Philosophy of AI</p>
+    <h1 class="hero-title notranslate" translate="no">Porphyrian<br><em>Tree</em></h1>
+    <p class="hero-lede">{{ site.tagline }}.</p>
+    <p class="hero-body">
+      Porphyry’s tree divided being into genus and difference, down to the rational animal.
+      This site asks what happens to that old diagram when something new — trained, not born —
+      starts to look rational too.
+    </p>
+    <div class="hero-cta">
+      <a class="btn gold" href="{{ '/blog/' | relative_url }}">Read the blog</a>
+      <a class="btn ghost" href="{{ '/about/' | relative_url }}">About me</a>
+    </div>
+  </div>
+  <div class="hero-figure">
+    {% include tree.svg %}
+    <p class="figcap mono">Arbor Porphyriana · after the <i>Isagoge</i>, c. 270 CE</p>
+  </div>
+</section>
+
+<section class="wrap section">
+  <header class="section-head">
+    <p class="eyebrow mono">§ I — Lines of inquiry</p>
+    <h2>Three columns of the temple</h2>
+  </header>
+  <div class="columns">
+    {% for c in site.data.inquiries %}
+    <article class="column">
+      <div class="capital" aria-hidden="true"></div>
+      <p class="numeral">{{ c.numeral }}</p>
+      <h3>{{ c.title }}</h3>
+      <p>{{ c.text }}</p>
+      <div class="base" aria-hidden="true"></div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="wrap section">
+  <header class="section-head row">
+    <div>
+      <p class="eyebrow mono">§ II — Recent writing</p>
+      <h2>From the notebook</h2>
+    </div>
+    <a class="more mono" href="{{ '/blog/' | relative_url }}">All posts →</a>
+  </header>
+  <div class="cards">
+    {% for post in site.posts limit:3 %}
+      {% include post-card.html post=post %}
+    {% else %}
+      <p class="muted">No posts yet.</p>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="wrap section">
+  <figure class="epigraph">
+    <blockquote>
+      “Whether genera and species subsist, or reside in bare thoughts alone; whether, if they subsist,
+      they are bodies or incorporeal; and whether they are separate or exist in sensible things —
+      these I shall decline to discuss.”
+    </blockquote>
+    <figcaption class="mono">Porphyry, <i>Isagoge</i>, preface · the question this site will not decline</figcaption>
+  </figure>
+</section>

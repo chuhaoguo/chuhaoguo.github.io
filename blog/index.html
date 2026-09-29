@@ -1,0 +1,38 @@
+---
+layout: default
+title: Blog
+body_class: blog
+---
+<section class="wrap page">
+  <header class="page-head">
+    <p class="eyebrow mono">Archive · {{ site.posts | size }} entries</p>
+    <h1>The Blog</h1>
+    <p class="lede">Essays, working notes, and reading reports on the philosophy of artificial intelligence.</p>
+    <div class="rule"><span></span></div>
+  </header>
+
+  <div class="filters">
+    <label class="search">
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <input type="search" id="post-search" placeholder="Search posts…" autocomplete="off">
+    </label>
+    <div class="chips" role="group" aria-label="Filter by tag">
+      <button type="button" class="chip" data-tag="" aria-pressed="true">All</button>
+      {% assign tags = site.tags | sort %}
+      {% for t in tags %}
+      <button type="button" class="chip" data-tag="{{ t[0] | downcase }}" aria-pressed="false">{{ t[0] }} <span>{{ t[1] | size }}</span></button>
+      {% endfor %}
+    </div>
+  </div>
+
+  {% assign years = site.posts | group_by_exp: "p", "p.date | date: '%Y'" %}
+  {% for y in years %}
+  <div class="year-group">
+    <h2 class="year mono">{{ y.name }}</h2>
+    <div class="cards list">
+      {% for post in y.items %}{% include post-card.html post=post %}{% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+  <p class="empty muted" hidden>Nothing matches that — try another word or tag.</p>
+</section>

@@ -1,0 +1,7 @@
+{% assign p = include.post %}
+<a class="card" href="{{ p.url | relative_url }}" data-tags="{{ p.tags | join: '|' | downcase }}" data-search="{{ p.title | append: ' ' | append: p.excerpt | strip_html | downcase | escape }}">
+  <p class="card-meta mono"><time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%Y.%m.%d" }}</time>{% if p.tags.size > 0 %} · {{ p.tags | first }}{% endif %}</p>
+  <h3>{{ p.title }}</h3>
+  <p class="card-excerpt">{{ p.description | default: p.excerpt | strip_html | truncatewords: 34 }}</p>
+  <span class="card-go mono">Read →</span>
+</a>

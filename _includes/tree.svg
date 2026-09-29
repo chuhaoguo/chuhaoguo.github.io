@@ -1,0 +1,46 @@
+<svg class="ptree" viewBox="0 0 440 690" role="img" aria-labelledby="ptree-t">
+<title id="ptree-t">The Porphyrian tree: substance divided by differentiae down to the human species, with a speculative branch for artificial minds.</title>
+<defs><filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<g class="edges">
+<path class="edge" d="M220 60 L100 110" pathLength="1" style="--d:0.00s"/>
+<path class="edge neg" d="M220 60 L340 110" pathLength="1" style="--d:0.00s"/>
+<path class="edge" d="M100 110 L220 160" pathLength="1" style="--d:0.35s"/>
+<path class="edge" d="M220 190 L100 240" pathLength="1" style="--d:0.70s"/>
+<path class="edge neg" d="M220 190 L340 240" pathLength="1" style="--d:0.70s"/>
+<path class="edge" d="M100 240 L220 290" pathLength="1" style="--d:1.05s"/>
+<path class="edge" d="M220 320 L100 370" pathLength="1" style="--d:1.40s"/>
+<path class="edge neg" d="M220 320 L340 370" pathLength="1" style="--d:1.40s"/>
+<path class="edge" d="M100 370 L220 420" pathLength="1" style="--d:1.75s"/>
+<path class="edge" d="M220 450 L100 500" pathLength="1" style="--d:2.10s"/>
+<path class="edge neg" d="M220 450 L340 500" pathLength="1" style="--d:2.10s"/>
+<path class="edge" d="M100 500 L220 550" pathLength="1" style="--d:2.45s"/>
+<path class="edge" d="M220 580 L140 632" pathLength="1" style="--d:2.80s"/>
+<path class="edge" d="M220 580 L220 632" pathLength="1" style="--d:2.80s"/>
+<path class="edge" d="M220 580 L300 632" pathLength="1" style="--d:2.80s"/>
+<path class="edge ai" d="M100 500 C 70 540, 45 565, 50 592" pathLength="1" style="--d:3.10s"/>
+</g>
+<g class="trunk">
+<g class="node" style="--d:0.00s"><rect x="145.0" y="30" width="150" height="30" rx="2"/><text x="220" y="49.5">SUBSTANCE</text></g>
+<g class="node" style="--d:1.05s"><rect x="145.0" y="160" width="150" height="30" rx="2"/><text x="220" y="179.5">BODY</text></g>
+<g class="node" style="--d:2.10s"><rect x="145.0" y="290" width="150" height="30" rx="2"/><text x="220" y="309.5">LIVING BODY</text></g>
+<g class="node" style="--d:3.15s"><rect x="145.0" y="420" width="150" height="30" rx="2"/><text x="220" y="439.5">ANIMAL</text></g>
+<g class="node" style="--d:4.20s"><rect x="145.0" y="550" width="150" height="30" rx="2"/><text x="220" y="569.5">HUMAN</text></g>
+</g>
+<g class="diffs">
+<g class="dnode" style="--d:0.35s"><circle cx="100" cy="110" r="4.2"/><text x="88" y="115" text-anchor="end">corporeal</text></g>
+<g class="dnode neg" style="--d:0.35s"><circle cx="340" cy="110" r="3.4"/><text x="352" y="115">incorporeal</text></g>
+<g class="dnode" style="--d:1.40s"><circle cx="100" cy="240" r="4.2"/><text x="88" y="245" text-anchor="end">animate</text></g>
+<g class="dnode neg" style="--d:1.40s"><circle cx="340" cy="240" r="3.4"/><text x="352" y="245">inanimate</text></g>
+<g class="dnode" style="--d:2.45s"><circle cx="100" cy="370" r="4.2"/><text x="88" y="375" text-anchor="end">sensitive</text></g>
+<g class="dnode neg" style="--d:2.45s"><circle cx="340" cy="370" r="3.4"/><text x="352" y="375">insensitive</text></g>
+<g class="dnode" style="--d:3.50s"><circle cx="100" cy="500" r="4.2"/><text x="88" y="505" text-anchor="end">rational</text></g>
+<g class="dnode neg" style="--d:3.50s"><circle cx="340" cy="500" r="3.4"/><text x="352" y="505">irrational</text></g>
+</g>
+<g class="indiv" style="--d:3.10s">
+<circle cx="140" cy="636" r="3"/><text x="140" y="660">Socrates</text>
+<circle cx="220" cy="636" r="3"/><text x="220" y="660">Plato</text>
+<circle cx="300" cy="636" r="3"/><text x="300" y="660">Aristotle</text>
+</g>
+<g class="ai-node" style="--d:4.00s"><circle cx="50" cy="600" r="5" filter="url(#glow)"/><text x="50" y="626">machina?</text><rect class="cursor" x="83" y="615" width="7" height="13"/></g>
+<circle class="signal" r="3" filter="url(#glow)"><animateMotion dur="7s" begin="4.5s" repeatCount="indefinite" path="M220 45 L100 110 L220 175 L100 240 L220 305 L100 370 L220 435 L100 500 L220 565"/></circle>
+</svg>
