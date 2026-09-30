@@ -8,15 +8,19 @@ subtitle: Who is climbing this tree, and why.
 
 <!-- ✎ Replace everything below with your own words. -->
 
-I am **{{ site.author.name }}** — {{ site.author.role }}.
-My work sits where the philosophy of mind, philosophy of language, and ethics meet
-contemporary machine learning.
+I am Chuhao Guo, and you can call me Tree. I'm a freshman at Vanderbilt University studying Philosophy and Artificial Intelligence, and I've been reading and thinking about philosophy for six years.
+
+When I'm not doing philosophy, I play baseball, soccer, and pool. I'm also a calligrapher and a competitive speedcuber, ranked top 5 in China for solving the Megaminx.
+
 
 ## What I work on
 
-- **Machine understanding.** Whether large models understand, and what "understanding" has to mean for that question to be answerable.
-- **Categories and kinds.** How old classificatory schemes — genus, species, differentia — cope with artefacts that learn.
-- **Responsibility.** Who answers for what artificial agents do.
+I'm drawn to the questions that AI makes urgent, and this blog is where I work through them. My writing centers on four areas:
+- **Aesthetics.** Whether algorithms can make something beautiful, and how will AI change humans' understanding of beauty.
+- **Ethics.** Whether AI can be a moral agent or deserve moral concern, and how it will reshape human responsibility.
+- **Semantics.** Whether language models truly mean what they say, and what that reveals about human language and understanding.
+- **Consciousness.** Whether machines could ever have mind, and how we could tell if they did.
+
 
 ## Why "Porphyrian Tree"?
 
