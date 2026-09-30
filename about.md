@@ -5,10 +5,15 @@ eyebrow: Author · Correspondence
 permalink: /about/
 subtitle: Who is climbing this tree, and why.
 ---
-
+<style>
+  .name-zh { display: none; }
+  html.translated-ltr .name-en { display: none; }
+  html.translated-ltr .name-zh { display: inline; }
+  p + p { margin-top: 1.2em !important; }
+</style>
 <!-- ✎ Replace everything below with your own words. -->
 
-I'm <span translate="no"><span class="name-en">Chuhao Guo</span><span class="name-zh">郭楚昊</span></span>, but you can call me <span translate="no">Tree</span>. I come from Shenzhen, China. I'm a freshman at Vanderbilt University studying Philosophy and Artificial Intelligence, and I've been reading and thinking about philosophy for five years. 
+My name is <span translate="no"><span class="name-en">Chuhao Guo</span><span class="name-zh">郭楚昊</span></span>, but you can call me <span translate="no">Tree</span>. I come from Shenzhen, China. I'm a freshman at Vanderbilt University studying Philosophy and Artificial Intelligence, and I've been reading and thinking about philosophy for five years.
 
 I enjoy taking the familiar apart and rebuilding it, and searching for the art within order and structure. The deep tremor of *thaumazein*, or wonder, comes with it.
 
