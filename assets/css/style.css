@@ -428,3 +428,14 @@ h1, h2, h3, h4 {
   *, *::before, *::after { animation-duration: 0.001ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition: none !important; }
   .ptree .signal { display: none; }
 }
+
+/* 段落间距和行宽 */
+.page-content p {
+  margin-bottom: 1.2em;
+  max-width: 65ch;
+}
+
+/* 翻译成中文时显示中文名 */
+.name-zh { display: none; }
+html.translated-ltr .name-en { display: none; }
+html.translated-ltr .name-zh { display: inline; }
