@@ -8,9 +8,9 @@ subtitle: Who is climbing this tree, and why.
 
 <!-- ✎ Replace everything below with your own words. -->
 
-I am Chuhao Guo, and you can call me Tree. I'm a freshman at Vanderbilt University studying Philosophy and Artificial Intelligence, and I've been reading and thinking about philosophy for six years.
+I am Chuhao Guo, but you can call me Tree. I come from Shenzhen, China. I'm a freshman at Vanderbilt University studying Philosophy and Artificial Intelligence, and I've been reading and thinking about philosophy for six years. I enjoy taking the familiar apart and rebuilding it, and searching for the art within order and structure. The quiet thrill of *thaumazein*, or wonder, comes with it.
 
-When I'm not doing philosophy, I play baseball, soccer, and pool. I'm also a calligrapher and a competitive speedcuber, ranked top 5 in China for solving the Megaminx.
+Meanwhile, I am also a baseball, soccer, and pool player, a calligrapher, and a competitive speedcuber, ranked top 5 in China for solving the Megaminx.
 
 
 ## What I work on
@@ -32,7 +32,7 @@ This site is a place to test where it bends and where it breaks.
 
 ## Contact
 
-{% if site.author.email != "" %}Write to me at <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.{% else %}Add your email in `_config.yml` and it will appear here.{% endif %}
+{% if site.author.email != "" %} <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.{% else %}Add your email in `_config.yml` and it will appear here.{% endif %}
 
 {% assign real_links = site.author.links | where_exp: "l", "l.url != ''" %}
 {% if real_links.size > 0 %}
