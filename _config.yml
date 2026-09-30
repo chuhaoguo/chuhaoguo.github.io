@@ -3,7 +3,7 @@
 #  Edit the values below; the whole site updates.
 # ─────────────────────────────────────────────
 title: Porphyrian Tree
-tagline: Notes on minds, machines, and the categories we divide them by
+tagline: Old categories, new minds.
 description: >-
   A research journal on the philosophy of artificial intelligence —
   mind, meaning, agency, and the old taxonomies that new machines unsettle.
@@ -14,7 +14,7 @@ author:
   name: "Your Name"            # ← change me
   role: "Researcher in the Philosophy of AI"
   affiliation: ""              # e.g. "Department of Philosophy, …"
-  email: ""                    # optional; shown on About page if set
+  email: "chuhao.guo@vanderbilt.edu"                    # optional; shown on About page if set
   links:                       # optional; delete any you don't use
     - { label: "Google Scholar", url: "" }
     - { label: "PhilPapers",     url: "" }
