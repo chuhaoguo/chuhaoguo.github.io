@@ -8,9 +8,11 @@ subtitle: Who is climbing this tree, and why.
 
 <!-- ✎ Replace everything below with your own words. -->
 
-I am Chuhao Guo, but you can call me Tree. I come from Shenzhen, China. I'm a freshman at Vanderbilt University studying Philosophy and Artificial Intelligence, and I've been reading and thinking about philosophy for six years. I enjoy taking the familiar apart and rebuilding it, and searching for the art within order and structure. The quiet thrill of *thaumazein*, or wonder, comes with it.
+I'm <span translate="no"><span class="name-en">Chuhao Guo</span><span class="name-zh">郭楚昊</span></span>, but you can call me <span translate="no">Tree</span>. I come from Shenzhen, China. I'm a freshman at Vanderbilt University studying Philosophy and Artificial Intelligence, and I've been reading and thinking about philosophy for five years. 
 
-Meanwhile, I am also a baseball, soccer, and pool player, a calligrapher, and a competitive speedcuber, ranked top 5 in China for solving the Megaminx.
+I enjoy taking the familiar apart and rebuilding it, and searching for the art within order and structure. The deep tremor of *thaumazein*, or wonder, comes with it.
+
+Outside of philosophy, I am also a baseball, soccer, and pool player, a calligrapher, and a competitive speedcuber, ranked top 5 in China for solving the Megaminx.
 
 
 ## What I work on
