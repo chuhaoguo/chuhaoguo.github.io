@@ -1,0 +1,38 @@
+# The four branches on the home page — your main lines of research.
+# Edit the text freely. `tag` links the branch to blog posts with that tag.
+- numeral: I
+  title: Consciousness
+  greek: "συνείδησις"
+  tag: Consciousness
+  text: >-
+    Whether machines could ever have a mind — not merely behave as if they do —
+    and how we could tell if they did. I test the major theories of consciousness
+    against systems that were trained rather than born.
+  question: Is there something it is like to be a model?
+
+- numeral: II
+  title: Ethics
+  greek: "ἦθος"
+  tag: Ethics
+  text: >-
+    Whether AI can be a moral agent or deserve moral concern, and how it reshapes
+    human responsibility when decisions are handed to systems no one fully understands.
+  question: Can something without a self be blamed — or wronged?
+
+- numeral: III
+  title: Aesthetics
+  greek: "αἴσθησις"
+  tag: Aesthetics
+  text: >-
+    Whether algorithms can make something beautiful, and how AI will change what
+    humans mean by beauty, creativity, and authorship.
+  question: Can there be art without an artist?
+
+- numeral: IV
+  title: Semantics
+  greek: "σῆμα"
+  tag: Semantics
+  text: >-
+    Whether language models truly mean what they say, and what models that learn
+    words from other words reveal about human language and understanding.
+  question: Does meaning require a world?

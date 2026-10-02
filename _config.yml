@@ -11,7 +11,7 @@ url: "https://philosophytree.me"
 baseurl: ""
 
 author:
-  name: "Your Name"            # ← change me
+  name: "Chuhao Guo"
   role: "Researcher in the Philosophy of AI"
   affiliation: ""              # e.g. "Department of Philosophy, …"
   email: "chuhao.guo@vanderbilt.edu"                    # optional; shown on About page if set

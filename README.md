@@ -21,7 +21,7 @@
 |---|---|
 | 你的名字、简介、邮箱、学术链接 | `_config.yml` 里的 `author` |
 | About Me 页面正文 | `about.md` |
-| 首页三根“神庙柱子”（研究方向） | `_data/inquiries.yml` |
+| 首页四根“分枝”（研究方向） | `_data/branches.yml` |
 | 翻译菜单里的语言 | `_data/languages.yml` |
 | 颜色 | `assets/css/style.css` 顶部的 `--gold`、`--bg` 等变量 |
 

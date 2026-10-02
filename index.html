@@ -6,7 +6,7 @@ body_class: home
   <div class="hero-text">
     <p class="eyebrow mono"><span class="dot"></span> A research journal · Philosophy of AI</p>
     <h1 class="hero-title notranslate" translate="no">Porphyrian<br><em>Tree</em></h1>
-    <p class="hero-lede">{{ site.tagline }}.</p>
+    <p class="hero-lede">{{ site.tagline }}</p>
     <p class="hero-body">
       Porphyry’s tree divided being into genus and difference, down to the rational animal.
       This site asks what happens to that old diagram when something new — trained, not born —
@@ -23,21 +23,35 @@ body_class: home
   </div>
 </section>
 
-<section class="wrap section">
-  <header class="section-head">
-    <p class="eyebrow mono">§ I — Lines of inquiry</p>
-    <h2>Three columns of the temple</h2>
+<section class="wrap section branches-section">
+  <header class="section-head center">
+    <p class="eyebrow mono">§ I — Branches of inquiry</p>
+    <h2>Four branches, one trunk</h2>
   </header>
-  <div class="columns">
-    {% for c in site.data.inquiries %}
-    <article class="column">
-      <div class="capital" aria-hidden="true"></div>
-      <p class="numeral">{{ c.numeral }}</p>
-      <h3>{{ c.title }}</h3>
-      <p>{{ c.text }}</p>
-      <div class="base" aria-hidden="true"></div>
-    </article>
-    {% endfor %}
+  <div class="branches">
+    <div class="trunk-node">
+      <span class="mono">genus</span>
+      Artificial Mind
+    </div>
+    <svg class="branch-lines" viewBox="0 0 1000 150" preserveAspectRatio="none" aria-hidden="true">
+      <path class="trunk-line" d="M500 0 V48" pathLength="1"/>
+      {% assign xs = "125,375,625,875" | split: "," %}
+      {% for x in xs %}
+      <path class="branch-line" data-i="{{ forloop.index0 }}" d="M500 48 C500 100, {{ x }} 70, {{ x }} 150" pathLength="1" style="--d:{{ forloop.index0 | times: 0.12 | plus: 0.35 }}s"/>
+      {% endfor %}
+    </svg>
+    <div class="branch-grid">
+      {% for b in site.data.branches %}
+      <a class="branch" data-i="{{ forloop.index0 }}" href="{{ '/blog/' | relative_url }}?tag={{ b.tag | uri_escape }}" style="--d:{{ forloop.index0 | times: 0.12 | plus: 0.9 }}s">
+        <span class="branch-node" aria-hidden="true"></span>
+        <p class="branch-meta mono"><span>{{ b.numeral }}</span><span class="greek notranslate" translate="no" lang="grc">{{ b.greek }}</span></p>
+        <h3>{{ b.title }}</h3>
+        <p class="branch-text">{{ b.text }}</p>
+        <p class="branch-q">{{ b.question }}</p>
+        <span class="branch-go mono">Posts →</span>
+      </a>
+      {% endfor %}
+    </div>
   </div>
 </section>
 

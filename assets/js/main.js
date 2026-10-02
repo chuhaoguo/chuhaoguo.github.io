@@ -86,6 +86,46 @@
     }
   }
 
+  /* ---------- home: grow the branches when scrolled into view ---------- */
+  var branches = document.querySelector('.branches');
+  if (branches) {
+    if ('IntersectionObserver' in window) {
+      branches.classList.add('will-grow');
+      var io = new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting) { branches.classList.add('grown'); io.disconnect(); }
+      }, { threshold: 0.25 });
+      io.observe(branches);
+    }
+    /* redraw the curves in real pixels so each one lands on its card */
+    var svg = branches.querySelector('.branch-lines');
+    function layout() {
+      if (!svg || !svg.clientWidth) return;
+      var w = svg.clientWidth, h = svg.clientHeight, box = svg.getBoundingClientRect();
+      var mid = w / 2, fork = h * 0.32;
+      svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+      svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+      svg.querySelector('.trunk-line').setAttribute('d', 'M' + mid + ' 0 V' + fork);
+      branches.querySelectorAll('.branch').forEach(function (card) {
+        var r = card.getBoundingClientRect();
+        var x = r.left + r.width / 2 - box.left;
+        var line = svg.querySelector('.branch-line[data-i="' + card.dataset.i + '"]');
+        if (line) line.setAttribute('d', 'M' + mid + ' ' + fork + ' C' + mid + ' ' + (h * 0.7) + ', ' + x + ' ' + (h * 0.45) + ', ' + x + ' ' + h);
+      });
+    }
+    layout();
+    window.addEventListener('resize', layout);
+
+    branches.querySelectorAll('.branch').forEach(function (card) {
+      var line = branches.querySelector('.branch-line[data-i="' + card.dataset.i + '"]');
+      var trunk = branches.querySelector('.trunk-line');
+      if (!line) return;
+      var on = function () { line.classList.add('lit'); trunk.classList.add('lit'); };
+      var off = function () { line.classList.remove('lit'); trunk.classList.remove('lit'); };
+      card.addEventListener('mouseenter', on); card.addEventListener('mouseleave', off);
+      card.addEventListener('focus', on); card.addEventListener('blur', off);
+    });
+  }
+
   /* ---------- code block language labels ---------- */
   document.querySelectorAll('.prose div.highlighter-rouge').forEach(function (el) {
     var m = el.className.match(/language-(\w+)/);
